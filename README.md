@@ -1,4 +1,4 @@
-# 🚀 Solved Challenge
+# 🚀 Solvd Challenge
 
 This challenge involves creating a **main stack** and a **substack** with a single resource. The goal is to test the output of a Python script when the substack enters a rollback state.
 
