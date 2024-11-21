@@ -1,0 +1,19 @@
+{
+    "StackStatus": "UPDATE_ROLLBACK_IN_PROGRESS",
+    "RollbackInfo": [
+        {
+            "ResourceName": "main-challenge-stack",
+            "ErrorMessage": "The following resource(s) failed to update: [ChallengeSubstack]. ",
+            "NestedStackError": [
+                {
+                    "NestedStackResourceName": "main-challenge-stack",
+                    "NestedStackErrorMessage": "No error message"
+                },
+                {
+                    "NestedStackResourceName": "main-challenge-stack",
+                    "NestedStackErrorMessage": "The following resource(s) failed to update: [ChallengeSubstack]. "
+                }
+            ]
+        }
+    ]
+}

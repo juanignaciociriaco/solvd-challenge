@@ -1,0 +1,20 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Parameters:
+  S3TemplateBucketName:
+    Type: String
+    Description: "S3 Template bucket name"
+  S3ChallengeBucketName:
+    Type: String
+    Description: "S3 Challenge bucket name"
+Resources:
+  ChallengeSubstack:
+    Type: AWS::CloudFormation::Stack
+    Properties:
+      TemplateURL: !Sub "https://s3.${AWS::Region}.amazonaws.com/${S3TemplateBucketName}/Substack.yaml"
+      Parameters:
+        S3ChallengeBucketName: !Sub ${S3ChallengeBucketName}
+
+Outputs:
+  MainStackName:
+    Value: !Ref 'AWS::StackName'
+    Description: "Main Stack Name"
